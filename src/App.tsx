@@ -12,6 +12,12 @@ import QueueVisualizer from "./pages/QueueVisualizer";
 import LinkedListVisualizer from "./pages/LinkedListVisualizer";
 import BinaryTreeVisualizer from "./pages/BinaryTreeVisualizer";
 import HashTableVisualizer from "./pages/HashTableVisualizer";
+import GraphVisualizer from "./pages/GraphVisualizer";
+import HeapVisualizer from "./pages/HeapVisualizer";
+import TrieVisualizer from "./pages/TrieVisualizer";
+import RecursionDPVisualizer from "./pages/RecursionDPVisualizer";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +38,12 @@ const App = () => (
             <Route path="/linked-list" element={<LinkedListVisualizer />} />
             <Route path="/binary-tree" element={<BinaryTreeVisualizer />} />
             <Route path="/hash-table" element={<HashTableVisualizer />} />
+            <Route path="/graph" element={<GraphVisualizer />} />
+            <Route path="/heap" element={<HeapVisualizer />} />
+            <Route path="/trie" element={<TrieVisualizer />} />
+            <Route path="/recursion-dp" element={<RecursionDPVisualizer />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </DSALayout>
